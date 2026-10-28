@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nederkoval-chipadapt_jd299"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出推理芯片适配工程师·重排模型的候选截断上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "nederkoval" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://nederkoval.github.io"
+Repository = "https://github.com/nederkoval/chipadapt_jd299"
+Issues = "https://github.com/nederkoval/chipadapt_jd299/issues"
+
+[project.scripts]
+chipadapt_jd299 = "chipadapt_jd299:main"
+
+[tool.setuptools]
+py-modules = ["chipadapt_jd299"]
